@@ -1,4 +1,4 @@
-package com.devsuperior.hrpayroll.entities;
+package com.devsuperior.hreurekaserver.entities;
 
 import java.io.Serializable;
 

@@ -1,7 +1,7 @@
-package com.devsuperior.hrpayroll.resources;
+package com.devsuperior.hreurekaserver.resources;
 
-import com.devsuperior.hrpayroll.entities.Payment;
-import com.devsuperior.hrpayroll.services.PaymentService;
+import com.devsuperior.hreurekaserver.entities.Payment;
+import com.devsuperior.hreurekaserver.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
