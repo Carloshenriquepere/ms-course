@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager"/>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -8,6 +7,7 @@
         <option value="$PROJECT_DIR$/hr-worker/pom.xml" />
         <option value="$PROJECT_DIR$/hr-payroll1/pom.xml" />
         <option value="$PROJECT_DIR$/hr-payroll/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-eureka-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

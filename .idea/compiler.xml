@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hr-worker" />
         <module name="hr-payroll" />
+        <module name="hr-eureka-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hr-eureka-server" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
     </option>
