@@ -1,6 +1,6 @@
-package com.devsuperior.hreurekaserver.feignclients;
+package com.devsuperior.hrpayroll.feignclients;
 
-import com.devsuperior.hreurekaserver.entities.Worker;
+import com.devsuperior.hrpayroll.entities.Worker;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

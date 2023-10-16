@@ -1,8 +1,8 @@
-package com.devsuperior.hreurekaserver.services;
+package com.devsuperior.hrpayroll.services;
 
-import com.devsuperior.hreurekaserver.entities.Payment;
-import com.devsuperior.hreurekaserver.entities.Worker;
-import com.devsuperior.hreurekaserver.feignclients.WorkerFeignClient;
+import com.devsuperior.hrpayroll.entities.Payment;
+import com.devsuperior.hrpayroll.entities.Worker;
+import com.devsuperior.hrpayroll.feignclients.WorkerFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

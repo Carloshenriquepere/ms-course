@@ -1,4 +1,4 @@
-package com.devsuperior.hreurekaserver.config;
+package com.devsuperior.hrpayroll.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
