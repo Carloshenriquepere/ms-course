@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/hr-payroll1/pom.xml" />
         <option value="$PROJECT_DIR$/hr-payroll/pom.xml" />
         <option value="$PROJECT_DIR$/hr-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-api-gateway-zuul/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
