@@ -12,10 +12,12 @@
         <option value="$PROJECT_DIR$/hr-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/hr-user/pom.xml" />
         <option value="$PROJECT_DIR$/hr-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-oauth2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/hr-oauth/pom.xml" />
         <option value="$PROJECT_DIR$/hr-payroll1/pom.xml" />
       </set>
     </option>
