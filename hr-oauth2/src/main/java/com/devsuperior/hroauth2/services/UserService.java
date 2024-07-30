@@ -4,12 +4,15 @@ import com.devsuperior.hroauth2.entities.User;
 import com.devsuperior.hroauth2.feignclients.UserFeignClient;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class UserService {
+public class UserService implements UserDetailsService {
 
     private final UserFeignClient userFeignClient;
 
@@ -24,4 +27,14 @@ public class UserService {
     }
 
 
+    @Override
+    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+        User user = userFeignClient.findByEmail(userName).getBody();
+        if (user == null) {
+            log.error("User Details not found with email ::: {}", userName);
+            throw new UsernameNotFoundException("Email not found");
+        }
+        log.info("User Details found with email ::: {}", userName);
+        return user;
+    }
 }
