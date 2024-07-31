@@ -1,6 +1,7 @@
 package com.devsuperior.hroauth2.config;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,6 +17,12 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 @EnableAuthorizationServer
 @RequiredArgsConstructor
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+
+    @Value("${oauth.client.name}")
+    private String clientName;
+
+    @Value("${oauth.client.secret}")
+    private String clientSecret;
 
     private final AuthenticationManager authenticationManager;
 
@@ -33,8 +40,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("dev-superior")
-                .secret(passwordEncoder.encode("dev-123456"))
+                .withClient(clientName)
+                .secret(passwordEncoder.encode(clientSecret))
                 .authorizedGrantTypes("authorization_code", "password", "refresh_token")
                 .scopes("all")
                 .accessTokenValiditySeconds(3600)
