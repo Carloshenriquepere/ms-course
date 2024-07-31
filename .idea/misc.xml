@@ -9,16 +9,20 @@
         <option value="$PROJECT_DIR$/hr-payroll/pom.xml" />
         <option value="$PROJECT_DIR$/hr-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/hr-api-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-user/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-oauth2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/hr-oauth/pom.xml" />
         <option value="$PROJECT_DIR$/hr-payroll1/pom.xml" />
       </set>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -2,22 +2,33 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hr-payroll" />
+        <module name="hr-config-server" />
         <module name="hr-eureka-server" />
         <module name="hr-worker" />
         <module name="hr-api-gateway-zuul" />
+        <module name="hr-oauth2" />
+        <module name="hr-user" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hr-oauth" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hr-api-gateway-zuul" options="-parameters" />
+      <module name="hr-config-server" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
+      <module name="hr-oauth" options="-parameters" />
+      <module name="hr-oauth2" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
+      <module name="hr-user" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
     </option>
   </component>
