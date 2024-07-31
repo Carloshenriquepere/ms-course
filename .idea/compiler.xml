@@ -16,16 +16,12 @@
         <module name="hr-user" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="hr-oauth" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hr-api-gateway-zuul" options="-parameters" />
       <module name="hr-config-server" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
-      <module name="hr-oauth" options="-parameters" />
       <module name="hr-oauth2" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
       <module name="hr-user" options="-parameters" />
